@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <h1>ASPNETCORE Application</h1>
+    <ul>
+        <li><a asp-controller="app" asp-action="Index">Index</a></li>
+        <li><a asp-controller="app" asp-action="About">About</a></li>
+        <li><a asp-controller="app" asp-action="Contact">Contact</a></li>
+    </ul>
+    <div>
+        @RenderBody()
+    </div>
+    @RenderSection("Scripts", false)
+</body>
+</html>
